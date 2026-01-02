@@ -11,7 +11,7 @@
 - Collaborated on large-scale Unreal Engine codebase
 - Implemented Bluetooth, ANT+ and Direct Connect protocols to connect indoor bikes
 - Improved multiplayer data communication using lag compensation
-- Developed cross platform functional module to load libraries i.e, .dll, .dylib, .jar|.aar, .framework|.xcframwork in Unreal Engine
+- Developed cross platform functional module to load libraries i.e, .dll, .dylib, .jar, .aar, .framework, .xcframwork in Unreal Engine
 
 ---
 
