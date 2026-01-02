@@ -1,10 +1,17 @@
-## Senior Unreal & Unity Game Developer
+<!-- Banner Image -->
+<p align="center">
+  <img src="assets/banner.png" alt="Gor – Senior Game Developer" width="100%">
+</p>
 
-**Multiplayer Systems • Engine Tools • Blockchain Integration**  
-I am a Senior Unreal & Unity Game Developer with over 12 years of experience designing, building, and shipping gameplay systems and multiplayer architecture.
-I specialize in engine-level development, multiplayer systems, and blockchain integration for production games and platforms.
+## 👋Hi, I’m Ektishaf Ahwaz
 
-### Portfolio
-- [Selected Work](selected-work.md)
-- [Case Studies](case-studies.md)
-- [Contact](contact.md)
+Senior Unreal & Unity Game Developer with 12+ years of experience designing, building, and shipping high-performance games and engine systems.  
+I specialize in **multiplayer architecture, gameplay systems, and blockchain integration**.
+
+---
+
+## Portfolio
+
+- [Professional Game Engineering Highlights](selected-work.md) – Shipped games, engine systems, and blockchain-enabled projects  
+- [Case Studies](case-studies.md) – In-depth technical problem-solving and senior-level engineering examples  
+- [Contact](contact.md) – Reach out for collaborations or opportunities
