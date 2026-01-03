@@ -2,11 +2,6 @@
 title: Senior Unreal & Unity Game Developer
 ---
 
-<!-- Banner Image -->
-<p align="center">
-  <img src="assets/banner.png" alt="Gor – Senior Game Developer" width="100%">
-</p>
-
 ## 👋Welcome, I am Ektishaf Ahwaz
 
 Senior Unreal & Unity Game Developer with 12+ years of experience designing, building, and shipping high-performance games and engine systems.  
