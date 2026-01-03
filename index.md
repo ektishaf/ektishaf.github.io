@@ -1,3 +1,7 @@
+---
+title: Senior Unreal & Unity Game Developer
+---
+
 <!-- Banner Image -->
 <p align="center">
   <img src="assets/banner.png" alt="Gor – Senior Game Developer" width="100%">
