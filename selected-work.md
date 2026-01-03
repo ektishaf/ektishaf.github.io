@@ -27,7 +27,7 @@
 - Focused on API design and extensibility
 - Built production-level tools for studios
 - Created new UI system for mod.io using Common UI for cross platform compatibility including Oculus Rift
-- Worked on enhanced input system to support cross platforms i.e, Playstation 4, Playstation 5, Nintendo Switch, Xbox One, Oculus Rift
+- Worked on enhanced input system to support cross platforms i.e, Playstation 4, Playstation 5, Nintendo Switch, Xbox One, Oculus Rift, Android, iOS
 - Worked closely with design and QA teams to ensure SDK usability and reliability
 
 ---
