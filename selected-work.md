@@ -18,8 +18,8 @@
 ## mod.io
 **Engine:** Unreal Engine  
 **Role:** Unreal Engine Library Developer  
-[https://mod.io](https://mod.io)
-[https://github.com/modio/modio-ue](https://github.com/modio/modio-ue)
+[https://mod.io](https://mod.io)  
+[https://github.com/modio/modio-ue](https://github.com/modio/modio-ue)  
 [https://github.com/modio/modio-sdk](https://github.com/modio/modio-sdk)
 
 **What I did**
