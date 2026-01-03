@@ -81,7 +81,7 @@
 ## Duck Hunting 3D
 **Engine:** Unity  
 **Role:** Senior Unity Developer  
-https://play.google.com/store/apps/details?id=com.thebasicapp.duck.hunting.season
+[https://play.google.com/store/apps/details?id=com.thebasicapp.duck.hunting.season](https://play.google.com/store/apps/details?id=com.thebasicapp.duck.hunting.season)
 
 **What I did**
 - Implemented shooting mechanics, hit detection, and scoring systems
@@ -97,7 +97,7 @@ https://play.google.com/store/apps/details?id=com.thebasicapp.duck.hunting.seaso
 ## Strata AR
 **Engine:** Unity  
 **Role:** Senior Software Engineer  
-https://www.strata.com/vr/
+[https://www.strata.com/vr/](https://www.strata.com/vr/)
 
 **What I did**
 - Developed AR interaction and object-tracking systems for mobile and tablet devices
