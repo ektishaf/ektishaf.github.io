@@ -35,7 +35,7 @@
 ## PlayTradeX
 **Engine:** Unreal Engine  
 **Role:** Senior Unreal Engine Developer (Blockchain Integration)  
-[https://playtradex.fun](https://playtradex.fun)
+[https://github.com/ektishaf/playtradex-sdk-unity](https://github.com/ektishaf/playtradex-sdk-unity)
 
 **What I did**
 - Designed and implemented blockchain-powered in-game marketplace
