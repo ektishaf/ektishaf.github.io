@@ -19,7 +19,7 @@ I specialize in **multiplayer architecture, gameplay systems, and blockchain int
 
 ## Cultural & Language Advocacy
 
-- [Official Khowar Language Digital Integration](https://ektishaf.com/khowar.github.io) – Language preservation, digital translation tools, and Google Translate community initiatives
+- [Official Khowar Language Digital Integration](https://ektishaf.com/khowar) – Language preservation, digital translation tools, and Google Translate community initiatives
 
 ---
 
