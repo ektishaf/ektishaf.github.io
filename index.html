@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Descended Ideas</title>
+  <meta name="description" content="Descended Ideas — crafting atmospheric mobile sports and action games, starting with Freestyle Polo." />
+  <style>
+    :root {
+      --bg: #090d14;
+      --surface: #111824;
+      --surface-elevated: #172131;
+      --border: #222f44;
+      --gold: #d4a359;
+      --gold-light: #f3ce8e;
+      --text: #eef2f8;
+      --muted: #93a1b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    a { color: var(--gold-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+    /* Navigation */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(9, 13, 20, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+    }
+    .studio-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      font-size: 1.08rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+    }
+    .logo-mark {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      border: 1.5px solid var(--gold);
+      display: grid;
+      place-items: center;
+      font-size: 0.85rem;
+      color: var(--gold-light);
+      background: rgba(212, 163, 89, 0.1);
+    }
+    .nav-links { display: flex; gap: 26px; font-size: 0.93rem; }
+    .nav-links a { color: var(--muted); font-weight: 500; transition: color 0.15s; }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
+
+    /* Hero */
+    .hero {
+      padding: 96px 0 80px;
+      text-align: center;
+      background: radial-gradient(circle at 50% 0%, rgba(212, 163, 89, 0.16), transparent 65%);
+      border-bottom: 1px solid var(--border);
+    }
+    h1 {
+      font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 18px;
+    }
+    .hero p {
+      max-width: 620px;
+      margin: 0 auto 34px;
+      color: var(--muted);
+      font-size: 1.12rem;
+    }
+    .btn-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      padding: 12px 26px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: 0.18s ease;
+      display: inline-block;
+    }
+    .btn-primary { background: var(--gold); color: #090d14; }
+    .btn-primary:hover { background: var(--gold-light); text-decoration: none; }
+    .btn-secondary {
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover { background: var(--surface-elevated); text-decoration: none; }
+
+    /* Sections */
+    section { padding: 72px 0; border-bottom: 1px solid var(--border); }
+    .section-header { margin-bottom: 36px; }
+    .section-eyebrow {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 6px;
+    }
+    h2 { font-size: 1.9rem; font-weight: 700; letter-spacing: -0.01em; }
+
+    /* Featured Game Showcase */
+    .game-showcase {
+      background: linear-gradient(145deg, var(--surface) 0%, var(--surface-elevated) 100%);
+      border: 1px solid rgba(212, 163, 89, 0.35);
+      border-radius: 16px;
+      padding: 36px;
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+    @media (max-width: 780px) {
+      .game-showcase { grid-template-columns: 1fr; padding: 26px; }
+    }
+    .status-pill {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 6px;
+      background: rgba(212, 163, 89, 0.15);
+      color: var(--gold-light);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+    .game-showcase h3 { font-size: 1.8rem; margin-bottom: 12px; }
+    .game-showcase p { color: var(--muted); margin-bottom: 20px; font-size: 0.98rem; }
+    .feature-list {
+      list-style: none;
+      margin-bottom: 24px;
+      display: grid;
+      gap: 8px;
+      color: #cbd5e1;
+      font-size: 0.93rem;
+    }
+    .feature-list li::before {
+      content: "◆";
+      color: var(--gold);
+      margin-right: 10px;
+      font-size: 0.75rem;
+    }
+    .game-links { display: flex; gap: 14px; flex-wrap: wrap; }
+    .game-meta-card {
+      background: rgba(9, 13, 20, 0.55);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+    }
+    .meta-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 11px 0;
+      border-bottom: 1px solid rgba(34, 47, 68, 0.6);
+      font-size: 0.9rem;
+    }
+    .meta-row:last-child { border-bottom: none; }
+    .meta-label { color: var(--muted); }
+    .meta-value { font-weight: 600; color: var(--text); }
+
+    /* Studio Pillars */
+    .pillars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .pillar-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 26px;
+    }
+    .pillar-card h3 { font-size: 1.15rem; margin-bottom: 8px; color: var(--gold-light); }
+    .pillar-card p { color: var(--muted); font-size: 0.94rem; }
+
+    /* Support & Legal */
+    .support-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .support-box p { color: var(--muted); max-width: 580px; font-size: 0.96rem; margin-top: 6px; }
+
+    /* Footer */
+    footer {
+      padding: 36px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <a href="#" class="studio-logo">
+        <span class="logo-mark">▲</span>
+        <span>Descended Ideas</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#games">Games</a>
+        <a href="#studio">About Studio</a>
+        <a href="#support">Player Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container hero">
+      <h1>Descended Ideas</h1>
+      <p>
+        We build high-altitude sports experiences and original 3D games rooted in heritage, fast-paced mechanics, and responsive mobile design.
+      </p>
+      <div class="btn-row">
+        <a href="#games" class="btn btn-primary">Explore Our Games</a>
+        <a href="mailto:descendedideas@gmail.com" class="btn btn-secondary">Contact Studio</a>
+      </div>
+    </div>
+
+    <section id="games">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Featured Release</span>
+          <h2>Studio Games</h2>
+        </div>
+
+        <div class="game-showcase">
+          <div>
+            <span class="status-pill">Android • Google Play</span>
+            <h3>Freestyle Polo</h3>
+            <p>
+              Experience the thrill of mountain freestyle polo at Shandur Top—the highest polo ground in the world. Choose between Chitral and Gilgit teams and compete in fast, rules-free highland matches.
+            </p>
+            <ul class="feature-list">
+              <li>Authentic Shandur Top high-altitude arena and mountain atmosphere</li>
+              <li>Responsive horsemanship and precision mallet strike controls</li>
+              <li>Optimized 3D performance across a wide range of Android devices</li>
+            </ul>
+            <div class="game-links">
+              <a href="https://ektishaf.github.io/freestylepolo/privacypolicy.html" class="btn btn-primary">Privacy Policy</a>
+              <a href="mailto:descendedideas@gmail.com?subject=Freestyle%20Polo%20Feedback" class="btn btn-secondary">Send Feedback</a>
+            </div>
+          </div>
+
+          <div class="game-meta-card">
+            <div class="meta-row">
+              <span class="meta-label">Developer</span>
+              <span class="meta-value">Descended Ideas</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">Platform</span>
+              <span class="meta-value">Android (Google Play)</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">Genre</span>
+              <span class="meta-value">3D Sports / Action</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">Support</span>
+              <span class="meta-value">descendedideas@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="studio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Our Craft</span>
+          <h2>About Descended Ideas</h2>
+        </div>
+
+        <div class="pillars">
+          <div class="pillar-card">
+            <h3>Authentic Worlds</h3>
+            <p>
+              We bring untold cultural sports and iconic mountain landscapes to life in interactive 3D, starting with the legendary polo grounds of northern Pakistan.
+            </p>
+          </div>
+          <div class="pillar-card">
+            <h3>Gameplay First</h3>
+            <p>
+              Every title is built around tight, tactile controls, fair progression, and smooth frame rates on everyday mobile hardware.
+            </p>
+          </div>
+          <div class="pillar-card">
+            <h3>Community Driven</h3>
+            <p>
+              We refine every release through direct player testing and hands-on feedback before and after launch.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="support">
+      <div class="container">
+        <div class="support-box">
+          <div>
+            <span class="section-eyebrow">Help & Inquiries</span>
+            <h2>Player & Press Support</h2>
+            <p>
+              Need help with one of our games, want to report a bug, or have a business inquiry? Reach our studio team directly.
+            </p>
+          </div>
+          <a href="mailto:descendedideas@gmail.com" class="btn btn-primary">descendedideas@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://ektishaf.github.io/freestylepolo/privacypolicy.html">Freestyle Polo Privacy Policy</a>
+        <a href="https://ektishaf.github.io/app-ads.txt">app-ads.txt</a>
+        <a href="mailto:descendedideas@gmail.com">descendedideas@gmail.com</a>
+      </div>
+      <p>© 2026 Descended Ideas. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
